@@ -258,5 +258,15 @@ body {
   text-transform: capitalize;
   margin-bottom: 1rem;
 }
+#items{
+  
+  display: flex; width: 100%; flex-wrap: wrap;
+
+}
+.item{
+  flex: 0 1 33%; border: 1px solid var(--primaryColor);
+  height: 20rem;
+
+}
 
 /* --------------- End of Cart ---------------- */
