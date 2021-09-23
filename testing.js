@@ -1,34 +1,18 @@
-
 async function showData() {
-async function getName(number) {
-
     const response = await fetch("products.json");
     const data = await response.json();
-   
+async function getName(number) {
     name= data[number-1].fields.title;
     return name;
-
 }
 async function getPrice(number) {
-
-    const response = await fetch("products.json");
-    const data = await response.json();
-   
     price= data[number-1].fields.price;
     return price;
-
 }
 async function getImg(number) {
-
-    const response = await fetch("products.json");
-    const data = await response.json();
-   
     img= data[number-1].fields.image.fields.file.url;
     return img;
-
 }
-
-
 const itemsName= [];
 const itemsPrice= [];
 const itemsImg= [];
@@ -40,14 +24,12 @@ itemsImg.push(await getImg(i));
 console.log(itemsName[0]);
 console.log(itemsPrice[0]);
 console.log(itemsImg[0]);
-
   class Items{
     constructor(name,price,img){
         this.name= name;
         this.price= price;
         this.img= img;
     }
-
   }
   const items = [];
   for(let i=0; i<8; i++){
@@ -62,7 +44,6 @@ const pricey = [];
     const containerCreate = document.createElement('div');
 const container = itemsId.appendChild(containerCreate);
 container.className = 'item';
-
     const imgName = document.createElement('div');
     imgName.style.cssText = `background: url(${items[elem].img}); background-position: center;background-repeat: no-repeat;background-size: cover; height: 10rem;`
  imgy[elem] =container.appendChild(imgName);
