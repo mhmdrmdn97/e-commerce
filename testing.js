@@ -1,8 +1,9 @@
 async function showData() {
     const response = await fetch("products.json");
     const data = await response.json();
+
 async function getName(number) {
-    name= data[number-1].fields.title;
+   name= data[number-1].fields.title;
     return name;
 }
 async function getPrice(number) {

@@ -104,7 +104,7 @@ body {
   letter-spacing: var(--mainSpacing);
 }
 .products-center {
-  width: 90vw;
+  width: 100vw;
   margin: 0 auto;
   max-width: 1170px;
   display: grid;
@@ -268,5 +268,19 @@ body {
   height: 20rem;
 
 }
+.pr{
+overflow: hidden;
+border-radius:12px;
+border: 1px solid black
+}
+.pr:hover {
+transform: scale(1.02);
+box-shadow: 1px 1px 7px 11px goldenrod;
+transition: duration 1s;
+cursor: pointer;
+}
+h3{
 
+  text-align: center;
+}
 /* --------------- End of Cart ---------------- */
